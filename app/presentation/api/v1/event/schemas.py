@@ -18,7 +18,7 @@ class EventCreate(BaseModel):
             owner_id=self.owner_id,
             template_id=self.template_id,
             group_id=self.group_id,
-            start_time=self.start_time,
+            start_time=self.start_time.utcnow(),
         )
 
 
